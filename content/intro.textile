@@ -1,0 +1,29 @@
+h1. Introduction
+
+h1. Your Instructors
+
+* Victor Costan
+
+h1. Why Use Version Control?
+
+* Collaborate without painful coordination.
+** Merge two people's changes on the same file.
+** Keep track of what your teammates are doing.
+* Backup your code.
+* Quickly roll back bad changes.
+* Documentation for your code.
+* Contribute to open-source projects.
+
+h1. Why Not Use Version Control?
+
+"StackOverflow: Good excuses NOT to use Version Control":http://stackoverflow.com/questions/132520/good-excuses-not-to-use-version-control
+
+* A delightful mix of laziness and incompetence.
+* The sense of danger gives my programming an edge.
+* My code is buggy, unstructured, and unreadable. It's simply not worth trying to keep.
+* Management will understand if my project slips by six months because I accidentally deleted something I shouldn't. They do it all the time.
+* If I delete my 5000 line source file by mistake, chances are the total rewrite may be better than the original. Eventually.
+* You hate your company and want to see them fail.
+
+
+h1. 
