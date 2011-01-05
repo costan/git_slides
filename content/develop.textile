@@ -2,7 +2,7 @@ h1. Development Workflow
 
 Git has many ways to achieve a result. I teach the workflow that I use.
 
-h1. "In the Zone" Loop
+h1. "In the Zone" Workflow
 
 # Create project dir
 # Create repository
@@ -10,7 +10,7 @@ h1. "In the Zone" Loop
 # Commit the feature
 # Go to step 3
 
-h1. "In the Zone" Loop
+h1. "In the Zone" Workflow
 
 # Create project dir
 ** @mkdir project@
@@ -22,7 +22,7 @@ h1. "In the Zone" Loop
 # Commit the feature
 # Go to step 3
 
-h1. "In the Zone" Loop
+h1. "In the Zone" Workflow
 
 # Create project dir
 # Create repository
@@ -32,42 +32,79 @@ h1. "In the Zone" Loop
 ** @git status@
 ** @git add -u .@
 ** @git status@
-** @git commit -m "Initial homepage."
+** @git commit -m "Initial homepage."@
 # Back to step 3.
 
-h1. Committing Explained
+h1. Git Has 3 Worlds
+
+<div style="text-align: center;">
+!{text-align:center;height:70%;}images/staging_index.png!
+</div>
+
+h1. Git Has 3 Worlds
+
+# The repository
+** All the versions of your project
+# The working copy
+** The version in the filesystem
+** Other programs (e.g. your text editor) can only see this one
+# The staging area (a.k.a. the _index_)
+** A commit "under construction"
+** Committing: staging area -> new commit
+** Staging: working copy -> staging area
+
+h1. Paranoid Committing
 
 # Stage all changes except for deletion 
 ** @git add .@
-
 # Show me what's about to happen
 ** @git status@
-
 # Stage deletions
 ** @git add -u .@
+# Make the commit
+** @git commit -m "Initial homepage."@
 
-# Make the commit.
-** @git commit -m "Initial homepage."
-
-h1. Faster Committing.
+h1. Faster Committing
 
 # Stage *all* changes 
 ** @git add -A .@
-
 # Show me what's about to happen
 ** @git status@
+# Make the commit
+** @git commit -m "Initial homepage."@
 
-# Make the commit.
-** @git commit -m "Initial homepage."
-
-h1. Fastest Committing.
+h1. Fastest Committing
 
 # Stage *all* changes, make the commit.
-** @git commit -a -m "Initial homepage."
+** @git commit -a -m "Initial homepage."@
 
-h1. Thinking.
+h1. "Out of the Zone" Workflow
 
+What did I do recently?
 * @git log@
+* Shows recent commits
+
+h1. "Out of the Zone" Workflow
+
+Oh man, I shouldn't have committed that!
 * @git reset HEAD^@
-* @git reset --hard HEAD^@
+* Undoes your last @git commit@
+* The commit contents is available in the working tree
+
+Oh man, I shouldn't have committed that, or that, or that!
+* @git reset HEAD^^^@ does 3 commits
+* @git reset HEAD~3@ also does 3 commits
+
+h1. "Out of the Zone" Workflow
+
+I think I want this file in a different commit :(
+* @git reset HEAD -- file@ unstages an update
+* @git rm --cached file@ unstages a newly added file
+
+h1. "Out of the Zone" Workflow
+
+Those last two commits really are the same feature.
 * @git rebase -i HEAD^^@
+* Rebasing is the easiest way to screw up your repository
+* Rebasing is also the most powerful tool for history rewriting
+

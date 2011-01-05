@@ -42,6 +42,12 @@ h1. Trees vs Commits
 ** Author's explanation of what is changed in the new version. (message)
 ** Commits the author used to produce this commit. (parents)
 
+h1. Trees vs Commits
+
+<div style="text-align: center;">
+!{text-align:center;width:95%;}images/commits_trees.png!
+</div>
+
 h1. Tags
 
 <div style="text-align: center;">
