@@ -64,5 +64,19 @@ h1. Simplified View
 * Commit parents = versions immediately before this version.
 * Commits form a directed acyclic graph (DAG).
 
-Demo
-* @git gui@, select @Repository@ > @Visualize all branch history@
+h1. Demo I: Repository Structure
+
+# @git gui@
+# select @Repository@ > @Visualize all branch history@
+
+h1. Demo II: Commits as Documentation
+
+History
+* "Commits":https://github.com/pwnall/gitty/commits
+* Big problem broken down in small steps.
+* Almost as good as a live demo, if commits are small.
+
+Commit
+* "Commit: follow / unfollow in newsfeed.":https://github.com/pwnall/gitty/commit/3b1e2d68305353d8f7d22b62923b679387f385cb
+* All the changes related to a feature.
+* Shows how files are related to each other.

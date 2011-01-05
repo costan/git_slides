@@ -2,4 +2,72 @@ h1. Development Workflow
 
 Git has many ways to achieve a result. I teach the workflow that I use.
 
-h1. 
+h1. "In the Zone" Loop
+
+# Create project dir
+# Create repository
+# Code a feature
+# Commit the feature
+# Go to step 3
+
+h1. "In the Zone" Loop
+
+# Create project dir
+** @mkdir project@
+** @cd project@
+# Create repository
+** @git init@
+# Code a feature
+** _magic_
+# Commit the feature
+# Go to step 3
+
+h1. "In the Zone" Loop
+
+# Create project dir
+# Create repository
+# Code a feature
+# Commit the feature
+** @git add .@
+** @git status@
+** @git add -u .@
+** @git status@
+** @git commit -m "Initial homepage."
+# Back to step 3.
+
+h1. Committing Explained
+
+# Stage all changes except for deletion 
+** @git add .@
+
+# Show me what's about to happen
+** @git status@
+
+# Stage deletions
+** @git add -u .@
+
+# Make the commit.
+** @git commit -m "Initial homepage."
+
+h1. Faster Committing.
+
+# Stage *all* changes 
+** @git add -A .@
+
+# Show me what's about to happen
+** @git status@
+
+# Make the commit.
+** @git commit -m "Initial homepage."
+
+h1. Fastest Committing.
+
+# Stage *all* changes, make the commit.
+** @git commit -a -m "Initial homepage."
+
+h1. Thinking.
+
+* @git log@
+* @git reset HEAD^@
+* @git reset --hard HEAD^@
+* @git rebase -i HEAD^^@
