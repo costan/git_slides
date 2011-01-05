@@ -4,7 +4,19 @@ h1. Your Instructors
 
 * Victor Costan
 
-h1. Why Use Version Control?
+h1. Version Control
+
+@proposal v2 good revised NEW 11-15-06.doc@
+
+bq. Revision control, also known as version control or source control [...], is the management of changes to documents, programs, and other information stored as computer files.
+"Wikipedia - Revision Control":http://en.wikipedia.org/wiki/Revision_control
+
+h1. Version Control
+
+@{text-decoration:line-through;}proposal v2 good revised NEW 11-15-06.doc@
+
+
+h1. Why Use Version Control
 
 * Collaborate without painful coordination.
 ** Merge two people's changes on the same file.
