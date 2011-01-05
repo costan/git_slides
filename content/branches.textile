@@ -1,2 +1,30 @@
 h1. Branches
 
+bq. A set of files under version control may be *branched* or forked at a point in time so that, from that time forward, two copies of those files may develop at different speeds or in different ways independently of each other.
+
+"Wikipedia - Revision Control":http://en.wikipedia.org/wiki/Revision_control
+
+h1. Git Commits vs Trees
+
+<div style="text-align: center;">
+!{text-align:center;width:95%;}images/commits_trees.png!
+</div>
+
+h1. Git Branches vs Commits, Trees
+
+<div style="text-align: center;">
+!{text-align:center;width:95%;}images/commits_trees_branches.png!
+</div>
+
+h1. Git Branch Lifecycle
+
+<div style="text-align: center;">
+!{text-align:center;height:70%;}images/more_branches.png!
+</div>
+
+h1. Git Branch Lifecycle
+
+<div style="text-align: center;">
+!{text-align:center;height:70%;}images/branch_lifecycle.png!
+</div>
+

@@ -9,6 +9,7 @@ h1. Version Control
 bc. proposal v2 good revised NEW 11-15-06.doc
 
 bq. Revision control, also known as version control or source control [...], is the management of changes to documents, programs, and other information stored as computer files.
+
 "Wikipedia - Revision Control":http://en.wikipedia.org/wiki/Revision_control
 
 h1. Version Control
