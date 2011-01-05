@@ -19,7 +19,7 @@ h1. Objects
 h1. Blobs 
 
 <div style="text-align: center;">
-!{height:90%;}images/object-blob.png!
+!{height:70%;}images/object-blob.png!
 </div>
 
 h1. Trees
@@ -34,8 +34,35 @@ h1. Commits
 !{text-align:center;height:70%;}images/object-commit.png!
 </div>
 
+h1. Trees vs Commits
+
+* Top-level tree - snapshot of all files and dirs in projects.
+* Commit = version. Tree + metadata.
+** Who produced the tree. (author)
+** Author's explanation of what is changed in the new version. (message)
+** Commits the author used to produce this commit. (parents)
+
 h1. Tags
 
 <div style="text-align: center;">
 !{text-align:center;height:70%;}images/object-tag.png!
 </div>
+
+h1. Trees vs Commits vs Tags
+
+* Top-level tree = snapshot of all files and dirs in projects.
+* Commit = version. Tree + metadata.
+** Who produced the tree. (author)
+** Author's explanation of what the version means. (message)
+* Tag = release. Commit + more metadata.
+** Tag's author (e.g., project's release manager)
+** Author's explanation of release. (message)
+
+h1. Simplified View
+
+* Commit = version.
+* Commit parents = versions immediately before this version.
+* Commits form a directed acyclic graph (DAG).
+
+Demo
+* @git gui@, select @Repository@ > @Visualize all branch history@
