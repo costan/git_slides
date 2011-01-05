@@ -16,6 +16,7 @@ Slides and Code
 * Source code: http://github.com/costan/git_slides/
 * Git documentation collection: http://git-scm.com/documentation
 * Git community book: http://book.git-scm.com/
+* Pro Git book: http://progit.org/book/
 * GitHub: http://github.com
 
 * Pull requests (patches) are welcome!

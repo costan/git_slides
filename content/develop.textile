@@ -53,6 +53,12 @@ h1. Git Has 3 Worlds
 ** Committing: staging area -> new commit
 ** Staging: working copy -> staging area
 
+h1. File Lifecycle
+
+<div style="text-align: center;">
+!{text-align:center;height:70%;}images/file_lifecycle.png!
+</div>
+
 h1. Paranoid Committing
 
 # Stage all changes except for deletion 
@@ -80,13 +86,16 @@ h1. Fastest Committing
 
 h1. "Out of the Zone" Workflow
 
-What did I do recently?
+* Commits = documentation.
+* Must be able to fix commit errors.
+
+h1. What did I do recently?
+
 * @git log@
 * Shows recent commits
 
-h1. "Out of the Zone" Workflow
+h1. Shouldn't Have Committed That
 
-Oh man, I shouldn't have committed that!
 * @git reset HEAD^@
 * Undoes your last @git commit@
 * The commit contents is available in the working tree
@@ -95,16 +104,16 @@ Oh man, I shouldn't have committed that, or that, or that!
 * @git reset HEAD^^^@ does 3 commits
 * @git reset HEAD~3@ also does 3 commits
 
-h1. "Out of the Zone" Workflow
+h1. Shouldn't Have Added That
 
-I think I want this file in a different commit :(
+I think I want this file in a different commit.
 * @git reset HEAD -- file@ unstages an update
 * @git rm --cached file@ unstages a newly added file
 
-h1. "Out of the Zone" Workflow
+h1. Gone Overboard on Commits
 
 Those last two commits really are the same feature.
+
 * @git rebase -i HEAD^^@
 * Rebasing is the easiest way to screw up your repository
 * Rebasing is also the most powerful tool for history rewriting
-

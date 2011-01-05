@@ -8,11 +8,15 @@ h1. Git Repositories
 
 * "Git Repositories":repository.html
 
-h1. Coding
+h1. Development Workflow
 
 * "Development Workflow":develop.html
 
-h1. Collaboration
+h1. Branches
+
+* "Branches":branches.html
+
+h1. Collaboration Workflow
 
 * "Collaboration Workflow":collaborate.html
 
