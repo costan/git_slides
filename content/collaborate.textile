@@ -107,3 +107,11 @@ bc. remote-name/branch-name
 @git pull origin master@ is actually
 * @git fetch origin@ gets all branches in the @origin@ remote
 * @git merge origin/master@
+
+h1. GitHub
+
+* Code review
+* Pull requests
+* Many more things that make life easy
+
+E-mail us with your team's GitHub usernames if you want a private repository.
