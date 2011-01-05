@@ -4,6 +4,18 @@ h1. Introduction
 
 * "Introduction":intro.html
 
+h1. Git Repositories
+
+* "Git Repositories":repository.html
+
+h1. Coding
+
+* "Development Workflow":develop.html
+
+h1. Collaboration
+
+* "Collaboration Workflow":collaborate.html
+
 h1. Wrap-Up
 
 * "Wrap-up":wrap_up.html

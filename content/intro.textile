@@ -6,15 +6,16 @@ h1. Your Instructors
 
 h1. Version Control
 
-@proposal v2 good revised NEW 11-15-06.doc@
+bc. proposal v2 good revised NEW 11-15-06.doc
 
 bq. Revision control, also known as version control or source control [...], is the management of changes to documents, programs, and other information stored as computer files.
 "Wikipedia - Revision Control":http://en.wikipedia.org/wiki/Revision_control
 
 h1. Version Control
 
-@{text-decoration:line-through;}proposal v2 good revised NEW 11-15-06.doc@
+bc{text-decoration:line-through;}. proposal v2 good revised NEW 11-15-06.doc
 
+By the way, this is NOT the right way to do it.
 
 h1. Why Use Version Control
 
@@ -37,5 +38,10 @@ h1. Why Not Use Version Control?
 * If I delete my 5000 line source file by mistake, chances are the total rewrite may be better than the original. Eventually.
 * You hate your company and want to see them fail.
 
+h1. Why Use Git
 
-h1. 
+* It is awesome.
+* Cheap branches (you'll learn about them today).
+* Many open-source projects are on Git.
+* GitHub
+ 

@@ -1,0 +1,5 @@
+h1. Development Workflow
+
+Git has many ways to achieve a result. I teach the workflow that I use.
+
+h1. 

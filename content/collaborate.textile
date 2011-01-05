@@ -1,0 +1,18 @@
+h1. Sharing
+
+h1. Centralized Version Control
+
+* Central server stores authoritative copy of repository
+* Pro: linear history that everyone agrees on
+* Pro: revision numbers are short, sequential numbers -> can be used for versioning
+* Con: server down -> can't collaborate
+* Examples: Subversion (SVN), CVS, Perforce
+
+h1. Distributed Version Control
+
+* Everyone has full copy of repository
+* Examples: Git, Mercurial (hg), DARCS
+* Pro: no single point of failure
+* Pro: can work without Internet access
+* Con: history isn't linear
+* Con: revision numbers are long monstruosities

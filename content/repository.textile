@@ -1,0 +1,41 @@
+h1. Git Repositories
+
+Don't worry if it doesn't make sense right away! It's awesome if it does,
+though!
+
+h1. Objects
+
+* Everything is an object.
+* Objects never change after they are created. (immutable)
+* An object has
+## type: blob (file), tree (directory), commit (revision), tag
+## size
+## contents
+* Objects are named by SHA-1 hashes of contents
+** Full names are long and ugly: @435fcb11778c090e6b686d71361ecf30809694e6@
+** Short names: @435fc@ (any prefix, as long as it's unique)
+** No duplicates!
+
+h1. Blobs 
+
+<div style="text-align: center;">
+!{height:90%;}images/object-blob.png!
+</div>
+
+h1. Trees
+
+<div style="text-align: center;">
+!{text-align:center;height:70%;}images/object-tree.png!
+</div>
+
+h1. Commits
+
+<div style="text-align: center;">
+!{text-align:center;height:70%;}images/object-commit.png!
+</div>
+
+h1. Tags
+
+<div style="text-align: center;">
+!{text-align:center;height:70%;}images/object-tag.png!
+</div>
