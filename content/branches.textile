@@ -47,6 +47,12 @@ h1. HEAD
 * @HEAD@ is the name of the branch that you're working on.
 * Now you have a complete understanding of the Git object model!
 
+h1. Git Object Model
+
+<div style="text-align: center;">
+!{text-align:center;height:70%;}images/git-full-model.png!
+</div>
+
 h1. Branch Discipline
 
 There is no single solution. I like this one.
