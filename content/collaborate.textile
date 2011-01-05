@@ -1,8 +1,8 @@
-h1. Sharing
+h1. Collaboration Workflow
 
 h1. Centralized Version Control
 
-* Central server stores authoritative copy of repository
+* Central server stores authoritative repository
 * Pro: linear history that everyone agrees on
 * Pro: revision numbers are short, sequential numbers -> can be used for versioning
 * Con: server down -> can't collaborate
@@ -10,9 +10,100 @@ h1. Centralized Version Control
 
 h1. Distributed Version Control
 
-* Everyone has full copy of repository
+* Everyone has a repository replica
 * Examples: Git, Mercurial (hg), DARCS
 * Pro: no single point of failure
 * Pro: can work without Internet access
 * Con: history isn't linear
 * Con: revision numbers are long monstruosities
+
+h1. Git is Distributed
+
+* Everyone has a repository replica
+* The replicas that you talk to are named @remotes@
+* The main "remote" is named @origin@
+
+h1. Managing Remote Repositories
+
+# Link up to a GitHub repository
+** <code>git remote add origin git@github.com:pwnall/6470_lecture.git</code>
+# Look at all the remotes
+** @git remote@
+# Remove a link
+** @git remote rm origin@
+
+h1. Remote Repositories
+
+2 ways to create a repository
+
+# @git init@
+** Used this one before
+# <code>git clone git@github.com:pwnall/6470_lecture.git</code>
+** Copies a remote repository
+** Links the remote as @origin@
+
+h1. Exchanging Data with a Remote Repository
+
+* Repositories exchange branches.
+* Branches take the rest of the object graph with them.
+
+h1. Exchanging Data with a Remote Repository
+
+* Repositories exchange branches.
+* Branches take the rest of the object graph with them.
+
+# Send commits on all your local branches to a remote
+** @git push@, which is a shortcut for
+** @git push origin@
+# Sends commits on one of your local branches to a remote
+** @git push origin master@
+** You need this command if the branch doesn't exist on the remote
+
+h1. Sidenote: GitHub Wants SSH Keys
+
+* Go to "help.github.com":http://help.github.com
+* Click on the "Generating SSH Keys":http://help.github.com/key-setup-redirect link
+
+h1. Exchanging Data with a Remote Repository
+
+* Repositories exchange branches.
+* Branches take the rest of the object graph with them.
+
+# Receive commits from a remote branch to your branch
+** @git pull origin master@
+# Receive commits from the remote branch matching your local branch
+** @git pull origin@
+
+h1. Exchanging Data with a Remote Repository
+
+* Repositories exchange branches.
+* Branches take the rest of the object graph with them.
+
+Creating a local copy of a remote branch (new @git@)
+* @git checkout bugfix@
+
+Creating a local copy of a remote branch (old @git@)
+* @git checkout origin/bugfix@
+* @git checkout -b bugfix@
+ 
+h1. Exchanging Data with a Remote Repository
+
+* Repositories exchange branches.
+* Branches take the rest of the object graph with them.
+ 
+Every branch in a remote repository is available as
+
+bc. remote-name/branch-name
+
+h1. Exchanging Data with a Remote Repository
+
+* Repositories exchange branches.
+* Branches take the rest of the object graph with them.
+ 
+Every branch in a remote repository is available as
+
+bc. remote-name/branch-name
+
+@git pull origin master@ is actually
+* @git fetch origin@ gets all branches in the @origin@ remote
+* @git merge origin/master@

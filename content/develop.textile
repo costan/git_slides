@@ -65,7 +65,7 @@ h1. Paranoid Committing
 ** @git add .@
 # Show me what's about to happen
 ** @git status@
-# Stage deletions
+# Stage modified and deleted files
 ** @git add -u .@
 # Make the commit
 ** @git commit -m "Initial homepage."@
@@ -81,7 +81,9 @@ h1. Faster Committing
 
 h1. Fastest Committing
 
-# Stage *all* changes, make the commit.
+# Only needed if you added new file
+** @git add .@
+# Stage updates, make the commit
 ** @git commit -a -m "Initial homepage."@
 
 h1. "Out of the Zone" Workflow
