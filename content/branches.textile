@@ -64,3 +64,53 @@ Two special integration branches for Web development.
 * @master@, a.k.a. _mainline_: all features are branched off and merged into it
 * @prod@  is what's running on production
  
+h1. Branching Workflow
+ 
+# Create a feature branch
+# Work on the feature
+# A horrible bug shows up in prod, drop everything you're doing
+# Fix the bug
+# Finish the feature
+# Merge the feature branch
+
+h1. Creating a Feature Branch
+ 
+# Create a feature branch
+** @git checkout -b awesomeness@
+# Work on the feature
+** _magic_ + @git commit -m "Awesome footer."@
+# A horrible bug shows up in prod, drop everything you're doing
+** @git commit -a -m "Saving work, must fix bug."@
+
+h1. Stop and Fix the Bug
+
+# Get back on @master@, must branch off of it
+** @git checkout master@
+# Create bug branch
+** @git checkout -b bugfix@
+# Develop the bugfix
+** _magic_ + @git commit -m "Fixed bug. Whew."@
+# Merge the bugfix into @master@
+** @git checkout master@
+** @git merge bugfix@
+# Delete the bugfix branch
+** @git branch -d bugfix@
+
+h1. Finish the Feature
+
+# Get bach to feature branch
+# Do more developing
+# Merge the feature into @master@
+# Delete the feature branch
+
+h1. Finish the Feature
+
+# Get back to feature branch
+** @git checkout awesomeness@
+# Do more developing
+** _magic_ + @git commit -m "Prepare for awesomeness."@
+# Merge the feature into @master@
+** @git checkout master@
+** @git merge awesomeness@
+# Delete the feature branch
+** @git branch -d awesomeness@
