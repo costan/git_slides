@@ -108,10 +108,18 @@ bc. remote-name/branch-name
 * @git fetch origin@ gets all branches in the @origin@ remote
 * @git merge origin/master@
 
-h1. GitHub
+h1. Github
 
+"Github":http://github.com is awesome.
 * Code review
 * Pull requests
+* Open-Source projects
+** Ruby on Rails
+** Android
 * Many more things that make life easy
 
-E-mail us with your team's GitHub usernames if you want a private repository.
+h1. Github
+
+If you want a private Github repository
+# Have all your team members make Github accounts
+# Send *one* e-mail to 6.470-staff@mit.edu with *all* your team members' Github usernames 

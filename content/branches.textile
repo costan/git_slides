@@ -97,6 +97,14 @@ h1. Stop and Fix the Bug
 # Develop the bugfix
 ** _magic_ + @git commit -m "Fixed bug. Whew."@
 # Merge the bugfix into @master@
+# Delete the bugfix branch
+
+h1. Stop and Fix the Bug
+
+# Get back on @master@, must branch off of it
+# Create bug branch
+# Develop the bugfix
+# Merge the bugfix into @master@
 ** @git checkout master@
 ** @git merge bugfix@
 # Delete the bugfix branch
@@ -108,6 +116,8 @@ h1. Finish the Feature
 # Do more developing
 # Merge the feature into @master@
 # Delete the feature branch
+
+Can you write down the commands before seeing the next slide?
 
 h1. Finish the Feature
 
